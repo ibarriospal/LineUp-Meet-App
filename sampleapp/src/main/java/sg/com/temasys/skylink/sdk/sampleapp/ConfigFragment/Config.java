@@ -44,11 +44,11 @@ public class Config {
     private static final String PREF_SELECTED_APP_KEY_SMR = "SelectedAppKeySmr";
 
     // Config values for Selected App key.
-    private static String APP_KEY = "App key.";
-    private static String APP_KEY_SECRET = "App key secret.";
-    private static String APP_KEY_DESCRIPTION = "Sample App Key description.";
+    private static String APP_KEY = "6c26d2f5-601e-45ff-9373-44794ee74448";
+    private static String APP_KEY_SECRET = "rbxd5kp6rnukg";
+    private static String APP_KEY_DESCRIPTION = "api";
     // Is Skylink Media Relay (SMR) enabled for this App key.
-    private static boolean IS_APP_KEY_SMR = false;
+    private static boolean IS_APP_KEY_SMR = true;
 
     // Config values for room names.
     public static String ROOM_NAME_AUDIO = ROOM_NAME_AUDIO_DEFAULT;

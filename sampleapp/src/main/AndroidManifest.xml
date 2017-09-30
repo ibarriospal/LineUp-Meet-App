@@ -22,13 +22,23 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="sg.com.temasys.skylink.sdk.sampleapp.MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="redirect-line-up-meet.com"
+                    android:scheme="http"/>
+            </intent-filter>
         </activity>
     </application>
-
 </manifest>

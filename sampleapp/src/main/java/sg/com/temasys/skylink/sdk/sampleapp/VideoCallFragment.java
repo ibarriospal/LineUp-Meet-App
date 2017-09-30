@@ -194,7 +194,7 @@ public class VideoCallFragment extends Fragment
                 } else {
                     toast += "but failed as local video is not available!";
                 }
-                Toast.makeText(parentActivity, toast, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(parentActivity, toast, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -676,15 +676,15 @@ public class VideoCallFragment extends Fragment
         }
         log += " Server message: " + message;
 
-        Toast.makeText(parentActivity, log, Toast.LENGTH_LONG).show();
+        //Toast.makeText(parentActivity, log, Toast.LENGTH_LONG).show();
         log = "[onDisconnect] " + log;
         Log.d(TAG, log);
     }
 
     @Override
     public void onLockRoomStatusChange(String remotePeerId, boolean lockStatus) {
-        Toast.makeText(parentActivity, "Peer " + remotePeerId +
-                " has changed Room locked status to " + lockStatus, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(parentActivity, "Peer " + remotePeerId +
+               // " has changed Room locked status to " + lockStatus, Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -741,7 +741,7 @@ public class VideoCallFragment extends Fragment
                 "video height:" + remotePeerUserInfo.getVideoHeight() + ".\r\n" +
                 "video width:" + remotePeerUserInfo.getVideoHeight() + ".\r\n" +
                 "video frameRate:" + remotePeerUserInfo.getVideoFps() + ".";
-        Toast.makeText(parentActivity, log, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(parentActivity, log, Toast.LENGTH_SHORT).show();
         Log.d(TAG, log);
     }
 
@@ -806,7 +806,7 @@ public class VideoCallFragment extends Fragment
 
     @Override
     public void onRemotePeerLeave(String remotePeerId, String message, UserInfo userInfo) {
-        Toast.makeText(parentActivity, "Your peer has left the room", Toast.LENGTH_SHORT).show();
+        Toast.makeText(parentActivity, "Your partner has left the room", Toast.LENGTH_SHORT).show();
         View peerView = linearLayout.findViewWithTag("peer");
         linearLayout.removeView(peerView);
 
@@ -820,8 +820,8 @@ public class VideoCallFragment extends Fragment
             addSelfView(videoView);
         }
         int numRemotePeers = getNumRemotePeers();
-        String log = "Your Peer " + Utils.getPeerIdNick(remotePeerId, userInfo) + " left: " +
-                message + ". " + numRemotePeers + " remote Peer(s) left in the room.";
+        String log = "Your partner " + Utils.getPeerIdNick(remotePeerId, userInfo) + " left: " +
+                message + ". " + numRemotePeers + " remote partner(s) left in the room.";
         Toast.makeText(parentActivity, log, Toast.LENGTH_SHORT).show();
         Log.d(TAG, log);
     }
@@ -844,7 +844,7 @@ public class VideoCallFragment extends Fragment
                 "video height:" + remotePeerUserInfo.getVideoHeight() + ".\r\n" +
                 "video width:" + remotePeerUserInfo.getVideoHeight() + ".\r\n" +
                 "video frameRate:" + remotePeerUserInfo.getVideoFps() + ".";
-        Toast.makeText(parentActivity, log, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(parentActivity, log, Toast.LENGTH_SHORT).show();
         Log.d(TAG, log);
     }
 
