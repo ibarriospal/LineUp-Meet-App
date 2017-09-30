@@ -36,8 +36,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data
-                    android:host="redirect-line-up-meet.com"
-                    android:scheme="http"/>
+                    android:host="redirect-line-up-meet.herokuapp.com"
+                    android:scheme="https"/>
             </intent-filter>
         </activity>
     </application>

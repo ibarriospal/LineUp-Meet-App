@@ -44,9 +44,9 @@ public class Config {
     private static final String PREF_SELECTED_APP_KEY_SMR = "SelectedAppKeySmr";
 
     // Config values for Selected App key.
-    private static String APP_KEY = "6c26d2f5-601e-45ff-9373-44794ee74448";
-    private static String APP_KEY_SECRET = "rbxd5kp6rnukg";
-    private static String APP_KEY_DESCRIPTION = "api";
+    private static String APP_KEY = "895c6449-7aca-4e71-af71-2e1c216b3384";
+    private static String APP_KEY_SECRET = "k6cwdba66iggb";
+    private static String APP_KEY_DESCRIPTION = "API";
     // Is Skylink Media Relay (SMR) enabled for this App key.
     private static boolean IS_APP_KEY_SMR = true;
 

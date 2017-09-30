@@ -210,6 +210,14 @@ public class VideoCallFragment extends Fragment
         return rootView;
     }
 
+   // @Override
+    //public void onCreate(Bundle savedInstanceState) {
+      //  super.onCreate(savedInstanceState);
+        // Allow volume to be controlled using volume keys
+        //parentActivity.setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
+
+    //}
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -377,6 +385,7 @@ public class VideoCallFragment extends Fragment
         Utils.skylinkConfigCommonOptions(config);
         return config;
     }
+
 
     private void initializeSkylinkConnection() {
         skylinkConnection = SkylinkConnection.getInstance();
